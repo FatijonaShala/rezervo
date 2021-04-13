@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Page Title -->
+    <title>Rezervo ne KS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="css/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--============================= HEADER =============================-->
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">Rezervo ne KS</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        
+                                    
+                                        
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.php">Fillimi</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="rezervimi.php">Rezervimi</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="meny.php">Meny</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="rrethnesh.php">Rreth Nesh</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="kontakti.php">Na Kontaktoni</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="log/login.php">Login</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+    <section class="slider d-flex align-items-center">
+       <!--  <img src="images/slider.jpg" class="img-fluid" alt="#"> --> 
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="slider-title_box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-content_wrap">
+                                    <h1>Rezervimi</h1>
+
+                                    <div id="msg" ></div>
+
+        <form id="reservation" method="post">
+
+           <p><input type="text" name="name" required placeholder="Shkruani Emrin"></p>
+
+           <p><input type="email" name="email" required placeholder="Shkruani E-mail"></p>
+
+           <p><input type="text" name="phone" required placeholder="Numri i Telefonit"></p>
+
+           <p><input type="text" name="meny" required placeholder="Perzgjedhja e Menys"></p>
+
+           <p><input type="date" id="date" name="date" required></p>
+
+           Koha: <select name="time">
+
+               <option value="16:00">16:00</option>
+               <option value="17:00">17:00</option>
+               <option value="18:00">18:00</option>
+               <option value="19:00">19:00</option>
+               <option value="20:00">20:00</option>
+               <option value="21:00">21:00</option>
+
+           </select> <br><br>
+
+           Nr. Personave: <select  name="party">
+
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="4+">4+</option>
+
+           </select> <br><br>
+
+
+           <button type="submit" name="button">Rezervo</button>
+
+        </form>
+
+
+
+
+
+        <script type="text/javascript">
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var today = yyyy + "-" + mm + "-" + dd;
+        var currentD = today.toString();
+        document.getElementById("date").setAttribute("min", currentD);
+        </script>
+
+        <script src="js/ajaxrequest.js" charset="utf-8"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// SLIDER -->
+    <!--//END HEADER -->
+
+    
+
+
+
+
+     <!--============================= Rezervo =============================-->
+    <section class="main-block light-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="add-listing-wrap">
+                        <h2>Meny</h2>
+                        <br><br>
+                        <h3>Mëngjesi</h3>                       
+                        <p>1.Omlet……………………………………………………2.00€</p>
+                        <p>2.Veze ne sy…………………………………………….2.00€</p>
+                        <p>3.Pancake………………………………………………..2.50€</p>
+                        <p>4.Llokume…………………………………………………1.50€</p>
+
+                        <h3>Supat</h3>
+                        <p>1.Supe krem me perime……………………………2.00€</p>
+                        <p>2.Supe domate………………………………………….2.00€</p>
+                        <p>3.Supe pule……………………………………………….2.50€</p>
+                        <p>4.Supe viqi…………………………………………………2.50€</p>
+
+                        <h3>Sallatat</h3>
+                        <p>1.Sallate greke………………………………………..2.00€</p>
+                        <p>2.Sallate pule………………………………………….3.50€</p>
+                        <p>3.Sallate mikes……………………………………….2.00€</p>
+                        <p>4.Sallate shope………………………………………1.50€</p>
+
+                        <h3>Pasta&Rizoto</h3>
+                        <p>1.Pasta boloneze…………………………………...4.00€</p>
+                        <p>2.Pasta me mish pule…………………………….4.00€</p>
+                        <p>3.Rizoto me perime………………………………..4.50€</p>
+                        <p>4.Rizoto me mish pule…………………………...4.50€</p>
+                        <p>5.Rizoto me spinaq…………………………………4.00€</p>
+
+                        <br>
+
+                        <h3>Pica</h3>
+                        <p>1.Brusketa……………………………………………1.50€</p>
+                        <p>2.Pica proshute………………..2.00€,4,00€,6.00€</p>
+                        <p>3.Pica Vegjetariane…………..2.50€,4,50€,7,00€</p>
+                        <p>4.Pica Tuna………………………3.00€,5,00€,7,50€</p>
+                        <p>5.Pica Margarita………………1.50€,3,00€,4,30€</p>
+
+                        <br>
+
+                        <h3>Peshku</h3>
+                        <p>1.Koc zgare…………………………………………..10€</p>
+                        <p>2.Trofte zgare…………………………………...5.00€</p>
+                        <p>3.Fileto Salmoni…………………………….….9.50€</p>
+                        <p>4.Fileto Levreku……………....……………….8.00€</p>
+                        <p>5.Fileto Koci………………………………………8.00€</p>
+
+                        <br>
+
+                        <h3>Misherat</h3>
+                        <p>1.Muskuj ne tave………………………………6.00€</p>
+                        <p>2.Qofte ne tave…………………………………4.00€</p>
+                        <p>3.Kombinim mishi…………………………….8.00€</p>
+                        <p>4.Rorlle viqi………………………………………7.00€</p>
+                        <p>5.Biftek…………………………………………….8.00€</p>
+                        <p>6.Skenderbeg……………….………………….6.50€</p>
+                        <p>7.Ramstek………………………………....…...7.50€</p>
+
+                        <br>
+
+                        <h3>Deserte</h3>
+                        <p>1.Chessecake……………………………………2.50€</p>
+                        <p>2.Sufle me qokollate………………………..3.00€</p>
+                        <p>3.Tiramisu………………………………………..2.00€</p>
+                        <p>4.Trileqe………………………………………….1.50€</p>
+
+                        <br>
+
+                        <h3>Pijet</h3>
+                        <p>1.Vere e kuqe…………………………………15€</p>
+                        <p>2.Vere e bardhe……………………………..15€</p>
+                        <p>3.Raki e shtepise………………………….....5€</p>
+                        <p>4.LLojet e birrave………………1.00€-5.00€</p>
+                        <p>5.Lengjet e gazuara………………….....1.00€</p>
+                        <p>6.Lengjet e pagazuara.....................1.00€</p>
+                        <p>7.Kafe....................................0.70c-1,80€</p>
+                        <p>8.Caj.................................................0.80c</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+          
+                    
+
+
+    <!--//end -->
+    <!--============================= FOOTER =============================-->
+    <footer class="main-block dark-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        
+                        <p>Copyright &copy; 2018 Listing. All rights reserved. Created by: Fatijona Shala | Rezervo ne KS </p>
+                        
+                        <ul>
+                            <li><a href="#"><span class="ti-facebook"></span></a></li>
+                            <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                            <li><a href="#"><span class="ti-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//END FOOTER -->
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            // 100 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 100) {
+
+                $('.fixed').addClass('is-sticky');
+
+            } else {
+
+                $('.fixed').removeClass('is-sticky');
+
+            };
+        });
+    </script>
+</body>
+
+</html>
